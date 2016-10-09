@@ -6,7 +6,7 @@ var PORT = 8080;
 // App
 var app = express();
 app.get('/', function (req, res){
-  res.send( process.env.NODE_ENV )
+  res.json( process.env )
   //res.send('Hello world from Distelli & Docker!');
 });
 
